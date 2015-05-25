@@ -181,4 +181,4 @@ csc /unsafe prog1.cs
 
 * 双击资源管理器中的属性节点，打开**项目属性**。
 * 点击 **Build** 标签页。
-* 选择选项** "Allow unsafe code"**。
+* 选择选项 **"Allow unsafe code"**。
