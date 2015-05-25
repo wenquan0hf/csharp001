@@ -57,7 +57,7 @@ namespace RectangleApplication
 }
 ```
 
-我们编译和运行上面的程序，将产生以下结果：
+编译执行上述代码，得到如下结果：
 ```
 Length: 4.5
 Width: 3.5
@@ -117,7 +117,7 @@ namespace RectangleApplication
 }
 ```
 
-我们编译和运行上面的程序，将产生以下结果：
+编译执行上述代码，得到如下结果：
 ```
 Enter Length:
 4.4
@@ -176,7 +176,7 @@ namespace RectangleApplication
 }
 ```
 
-我们编译和运行上面的程序，将产生以下结果：
+编译执行上述代码，得到如下结果：
 ```
 Length: 4.5
 Width: 3.5
