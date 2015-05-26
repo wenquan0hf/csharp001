@@ -10,7 +10,7 @@
 - Web 应用程序
 - Web 服务
 
-.Net 框架应用程是多平台的应用程序。框架的设计方式使它适用于下列各种语言：C# 、C++ 、Visual Basic 、Jscript 、COBOL 等等。所有这些语言可以访问框架，并且彼此之间可以互相交互。
+.Net 框架应用程是多平台的应用程序。框架的设计方式使它适用于下列各种语言：C#、C++、Visual Basic、Jscript、COBOL 等等。所有这些语言可以访问框架，并且彼此之间可以互相交互。
 
 .Net 框架由一个巨大的代码库组成，用于 C# 等客户端语言。下面列出一些 .Net 框架的组件：
 
@@ -29,7 +29,7 @@
 
 如需了解每个组件的功能，请参阅 [ASP.Net - Introduction](http://www.tutorialspoint.com/asp.net/asp.net_introduction.htm) ，更详细的信息，请参阅微软（Microsoft）的文档。
 
-## C\# 的集成开发环境 ( IDE )
+## C\# 的集成开发环境 (IDE)
 
 微软提供了下列用于 C# 编程的开发工具：
 
@@ -38,7 +38,7 @@
 - Visual Web Developer
 
 后面两个是免费使用的，可从微软官方网址下载。使用这些工具，您可以编写各种 C# 程序，
-从简单的命令行应用程序到更复杂的应用程序。您也可以使用基本的文本编辑器编写 C# 源代码文件，比如 Notepad ，并使用命令行编译器（.NET 框架的一部分），编译代码成组件。
+从简单的命令行应用程序到更复杂的应用程序。您也可以使用基本的文本编辑器编写 C# 源代码文件，比如 Notepad，并使用命令行编译器（.NET 框架的一部分），编译代码成组件。
 
 Visual C# Express 和 Visual Web Developer Express 版本是 Visual Studio 的定制版本，且具有相同的外观和感观。它们保留 Visual Studio 的大部分功能。
 在本教程中，我们使用的是 Visual C# 2010 Express。
