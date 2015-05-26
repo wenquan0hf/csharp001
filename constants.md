@@ -86,7 +86,7 @@ namespace EscapeChar
 }
 ```
 
-我们编译和运行上面的程序，将产生以下结果：
+编译执行上述代码，得到如下结果：
 ```
 Hello   World
 ```
@@ -134,7 +134,7 @@ namespace DeclaringConstants
 }
 ```
 
-编译和运行上面的程序，将产生以下结果：
+编译执行上述代码，得到如下结果：
 ```
 Enter Radius: 
 3
