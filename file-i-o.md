@@ -54,7 +54,7 @@ System.IO 命名空间中的FileStream类有助于读取，写入和关闭文件
 | FileAccess      | FileAccess 枚举成员有：Read, ReadWrite 和 Write.     |
 | FileShare | FileShare枚举有以下成员：<br>   * **Inheritable**: 允许文件句柄可由子进程继承。<br>   * **None**: 它拒绝共享当前文件<br>   * **Read**: 它允许打开文件进行读取<br>   * **ReadWrite**: 它允许打开文件进行读取和写入<br>   * **Write**: 它允许打开文件写入      |
 
-##　例子
+##　示例
 
 下面的程序示范了 FileStream 类：
 
