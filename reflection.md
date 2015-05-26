@@ -84,7 +84,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
     HelpAttribute
 ```
 
-## 例子
+## 示例
 
 在本实例中，我们将使用在上一章中创建的 DeBugInfo 属性，并使用反射（Reflection）来读取 Rectangle 类中的元数据。
 
