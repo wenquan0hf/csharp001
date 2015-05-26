@@ -14,7 +14,7 @@ namespace RectangleApplication
 {
     class Rectangle
     {
-        // 成员变量
+        // member variables
         double length;
         double width;
         public void Acceptdetails()
