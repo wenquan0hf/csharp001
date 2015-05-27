@@ -12,9 +12,9 @@
 * **未启动状态**：线程实例已被创建但 Start 方法仍未被调用时的状态。
 * **就绪状态**：线程已准备好运行，正在等待 CPU 周期时的状态。
 * **不可运行状态**：下面的几种情况下线程是不可运行的：
-* 	* 已经调用 Sleep 方法
-* 	* 已经调用 Wait 方法
-* 	* 通过 I/O 操作阻塞
+* 	 - 已经调用 Sleep 方法
+* 	 - 已经调用 Wait 方法
+* 	 - 通过 I/O 操作阻塞
 * **死亡状态**：线程已完成执行或已终止的状态。
 
 ## 主线程
@@ -149,7 +149,7 @@ namespace MultithreadingApplication
       {
          Console.WriteLine("Child thread starts");
          
-         // the thread is paused for 5000 milliseconds
+         // 令线程暂停 5000 毫秒
          int sleepfor = 5000; 
          
          Console.WriteLine("Child Thread Paused for {0} seconds", sleepfor / 1000);
@@ -198,7 +198,7 @@ namespace MultithreadingApplication
          {
             Console.WriteLine("Child thread starts");
             
-            // do some work, like counting to 10
+            // 执行一些任务，如计十个数
             for (int counter = 0; counter <= 10; counter++)
             {
                Thread.Sleep(500);
@@ -225,10 +225,10 @@ namespace MultithreadingApplication
          Thread childThread = new Thread(childref);
          childThread.Start();
          
-         //stop the main thread for some time
+         // 将主线程停止一段时间
          Thread.Sleep(2000);
          
-         //now abort the child
+         // 中止子线程
          Console.WriteLine("In Main: Aborting the Child thread");
          
          childThread.Abort();
