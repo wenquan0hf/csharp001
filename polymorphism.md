@@ -44,13 +44,13 @@ namespace PolymorphismApplication
       {
          Printdata p = new Printdata();
          
-         // Call print to print integer
+         // 调用 print 函数打印整型
          p.print(5);
          
-         // Call print to print float
+         // 调用 print 函数打印浮点型
          p.print(500.263);
          
-         // Call print to print string
+         // 调用 print 函数打印字符型
          p.print("Hello C++");
          Console.ReadKey();
       }
