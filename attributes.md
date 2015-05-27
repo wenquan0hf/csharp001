@@ -193,7 +193,7 @@
 
 ```
 
-	//a custom attribute BugFix to be assigned to a class and its members
+	//一个自定义的特性BugFix被分配给类和类的成员
 	[AttributeUsage(AttributeTargets.Class |
 	AttributeTargets.Constructor |
 	AttributeTargets.Field |
@@ -219,7 +219,7 @@
 
 ```
 
-	//a custom attribute BugFix to be assigned to a class and its members
+	//一个自定义的特性BugFix被分配给类和类的成员
 	[AttributeUsage(AttributeTargets.Class |
 	AttributeTargets.Constructor |
 	AttributeTargets.Field |
@@ -289,7 +289,7 @@
 	[DeBugInfo(49, "Nuha Ali", "10/10/2012", Message = "Unused variable")]
 	class Rectangle
 	{
-   		//member variables
+   		//成员变量
    		protected double length;
    		protected double width;
    		public Rectangle(double l, double w)
