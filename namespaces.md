@@ -7,7 +7,7 @@
 命名空间的定义以关键字 **namespace** 开始，其后跟命名空间的名称：
 <pre><code>namespace namespace_name
 {
-   // code declarations
+   // 代码声明
 }</code></pre>
   
 调用的函数或变量的命名空间启用版本，在命名空间名称如下：
@@ -112,10 +112,10 @@ Inside second_space</code></pre>
 你可以在一个命名空间中定义另一个命名空间，方法如下：
 <pre><code>namespace namespace_name1
 {
-   // code declarations
+   // 代码声明
    namespace namespace_name2
    {
-      // code declarations
+    //代码声明
    }
 }</code></pre>
 你可以使用点运算符“.”来访问嵌套命名空间中的成员
