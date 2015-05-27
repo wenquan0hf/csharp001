@@ -42,8 +42,8 @@ public class testStructure
    public static void Main(string[] args)
    {
 
-      Books Book1;   /* Declare Book1 of type Book */
-      Books Book2;   /* Declare Book2 of type Book */
+      Books Book1;   /* 将 Book1 声明为 Book 类型  */
+      Books Book2;   /* 将 Book2 声明为 Book 类型 */
 
       /* book 1 specification */
       Book1.title = "C Programming";
@@ -51,19 +51,19 @@ public class testStructure
       Book1.subject = "C Programming Tutorial";
       Book1.book_id = 6495407;
 
-      /* book 2 specification */
+      /* book 2 详细数据 */
       Book2.title = "Telecom Billing";
       Book2.author = "Zara Ali";
       Book2.subject =  "Telecom Billing Tutorial";
       Book2.book_id = 6495700;
 
-      /* print Book1 info */
+      /* 打印 Book1 信息 */
       Console.WriteLine( "Book 1 title : {0}", Book1.title);
       Console.WriteLine("Book 1 author : {0}", Book1.author);
       Console.WriteLine("Book 1 subject : {0}", Book1.subject);
       Console.WriteLine("Book 1 book_id :{0}", Book1.book_id);
 
-      /* print Book2 info */
+      /* 打印 Book2 信息 */
       Console.WriteLine("Book 2 title : {0}", Book2.title);
       Console.WriteLine("Book 2 author : {0}", Book2.author);
       Console.WriteLine("Book 2 subject : {0}", Book2.subject);
@@ -154,21 +154,21 @@ public class testStructure
    public static void Main(string[] args)
    {
 
-      Books Book1 = new Books();   /* Declare Book1 of type Book */
-      Books Book2 = new Books();   /* Declare Book2 of type Book */
+      Books Book1 = new Books();    /* 将 Book1 声明为 Book 类型  */
+      Books Book2 = new Books();    /* 将 Book2 声明为 Book 类型 */
 
-      /* book 1 specification */
+      /* book 1 详细信息 */
       Book1.getValues("C Programming",
       "Nuha Ali", "C Programming Tutorial",6495407);
 
-      /* book 2 specification */
+      /* book 2 详细信息 */
       Book2.getValues("Telecom Billing",
       "Zara Ali", "Telecom Billing Tutorial", 6495700);
 
-      /* print Book1 info */
+      /* 打印 Book1 信息 */
       Book1.display();
 
-      /* print Book2 info */
+      /* 打印 Book2 信息 */
       Book2.display(); 
 
       Console.ReadKey();
