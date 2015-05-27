@@ -11,7 +11,7 @@
 
 ```
 
-    // Declare a Code property of type string:
+    // 为字符类型声明一个叫Code的属性：
 	public string Code
 	{
    		get
@@ -24,7 +24,7 @@
    		}
 	}
 
-	// Declare a Name property of type string:
+	// 为字符类型声明一个叫Name的属性：
 	public string Name
 	{
    		get
@@ -37,7 +37,7 @@
    		}
 	}
 
-	// Declare a Age property of type int:
+	// 为整形类型声明一个叫Age的属性：
 	public int Age
 	{ 
    		get
@@ -67,7 +67,7 @@
       private string name = "not known";
       private int age = 0;
       
-      // Declare a Code property of type string:
+      // 为字符类型声明一个叫Code的属性：
       public string Code
       {
          get
@@ -80,7 +80,7 @@
          }
       }
       
-      // Declare a Name property of type string:
+      // 为字符类型声明一个叫Name的属性：
       public string Name
       {
          get
@@ -93,7 +93,7 @@
          }
       }
       
-      // Declare a Age property of type int:
+      // 为整形类型声明一个叫Age的属性：
       public int Age
       {
          get
@@ -116,16 +116,16 @@
       public static void Main()
       {
       
-         // Create a new Student object:
+         // 创建一个Student类的对象
          Student s = new Student();
          
-         // Setting code, name and the age of the student
+         // 为student对象设置code，name和age
          s.Code = "001";
          s.Name = "Zara";
          s.Age = 9;
          Console.WriteLine("Student Info: {0}", s);
          
-         //let us increase age
+         //为age加1
          s.Age += 1;
          Console.WriteLine("Student Info: {0}", s);
          Console.ReadKey();
@@ -171,7 +171,7 @@
       private string name = "N.A";
       private int age = 0;
       
-      // Declare a Code property of type string:
+      // 为字符类型声明一个叫Code的属性：
       public string Code
       {
          get
@@ -184,7 +184,7 @@
          }
       }
       
-      // Declare a Name property of type string:
+      // 为字符类型声明一个叫Name的属性：
       public override string Name
       {
          get
@@ -197,7 +197,7 @@
          }
       }
       
-      // Declare a Age property of type int:
+      // 为整形类型声明一个叫Age的属性：
       public override int Age
       {
          get
@@ -219,16 +219,16 @@
    	{
       public static void Main()
       {
-         // Create a new Student object:
+         // 创建一个Student类的对象
          Student s = new Student();
          
-         // Setting code, name and the age of the student
+         // 为student对象设置code，name和age
          s.Code = "001";
          s.Name = "Zara";
          s.Age = 9;
          Console.WriteLine("Student Info:- {0}", s);
          
-         //let us increase age
+         //为age加1
          s.Age += 1;
          Console.WriteLine("Student Info:- {0}", s);
          Console.ReadKey();
