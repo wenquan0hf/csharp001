@@ -83,7 +83,7 @@ A^B = 0011 0001
 
 ~A  = 1100 0011
 
-C# 支持位运算符列在下表中。假设变量 A 为 60 和变量 B 为 13 则：
+C# 支持位运算符列在下表中。假设变量 **A**=60，变量 **B**=13 则：
 
 [位运算符示例](http://www.tutorialspoint.com/csharp/csharp_bitwise_operators.htm)
 
