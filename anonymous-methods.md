@@ -54,25 +54,25 @@ namespace DelegateAppl
       }
       static void Main(string[] args)
       {
-         //create delegate instances using anonymous method
+         //使用匿名方法创建委托实例
          NumberChanger nc = delegate(int x)
          {
             Console.WriteLine("Anonymous Method: {0}", x);
          };
          
-         //calling the delegate using the anonymous method 
+         //使用匿名方法调用委托 
          nc(10);
          
-         //instantiating the delegate using the named methods 
+         //使用命名方法实例化委托
          nc =  new NumberChanger(AddNum);
          
-         //calling the delegate using the named methods 
+         //使用命名方法调用委托
          nc(5);
          
-         //instantiating the delegate using another named methods 
+         //使用另一个命名方法实例化委托
          nc =  new NumberChanger(MultNum);
          
-         //calling the delegate using the named methods 
+         //使用另一个命名方法调用委托
          nc(2);
          Console.ReadKey();
       }
