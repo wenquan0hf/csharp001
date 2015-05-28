@@ -57,11 +57,11 @@ namespace DelegateAppl
 
       static void Main(string[] args)
       {
-         //create delegate instances
+         // 创建委托实例
          NumberChanger nc1 = new NumberChanger(AddNum);
          NumberChanger nc2 = new NumberChanger(MultNum);
          
-         //calling the methods using the delegate objects
+         // 使用委托对象调用方法
          nc1(25);
          Console.WriteLine("Value of Num: {0}", getNum());
          nc2(5);
@@ -112,14 +112,14 @@ namespace DelegateAppl
 
       static void Main(string[] args)
       {
-         //create delegate instances
+         // 创建委托实例
          NumberChanger nc;
          NumberChanger nc1 = new NumberChanger(AddNum);
          NumberChanger nc2 = new NumberChanger(MultNum);
          nc = nc1;
          nc += nc2;
          
-         //calling multicast
+         // 调用多播
          nc(5);
          Console.WriteLine("Value of Num: {0}", getNum());
          Console.ReadKey();
@@ -150,16 +150,16 @@ namespace DelegateAppl
       static FileStream fs;
       static StreamWriter sw;
       
-      // delegate declaration
+      // 委托声明
       public delegate void printString(string s);
 
-      // this method prints to the console
+      // 该方法打印到控制台
       public static void WriteToScreen(string str)
       {
          Console.WriteLine("The String is: {0}", str);
       }
       
-      //this method prints to a file
+      // 该方法打印到文件
       public static void WriteToFile(string s)
       {
          fs = new FileStream("c:\\message.txt",
@@ -171,7 +171,7 @@ namespace DelegateAppl
          fs.Close();
       }
       
-      // this method takes the delegate as parameter and uses it to
+      // 该方法把委托作为参数，并使用它调用方法
       // call the methods as required
       public static void sendString(printString ps)
       {
