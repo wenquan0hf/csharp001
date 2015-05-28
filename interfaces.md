@@ -11,7 +11,7 @@
 接口使用关键字 interface 声明。它类似于类的声明。接口声明缺省为 public 类型。以下是一个接口声明的例子：
 <pre><code>public interface ITransactions
 {
-   // interface members
+   // 接口成员
    void showTransaction();
    double getAmount();
 }</code></pre>
@@ -27,7 +27,7 @@ namespace InterfaceApplication
 {
    public interface ITransactions
    {
-      // interface members
+      // 接口成员
       void showTransaction();
       double getAmount();
    }
