@@ -17,7 +17,7 @@ public delegate void BoilerLogHandler(string status);
 其次为使用 **event** 关键字来声明这个事件：
 
 ```
-//Defining event based on the above delegate
+//基于上述委托定义事件
 public event BoilerLogHandler BoilerEventLog;
 ```
 
@@ -93,7 +93,7 @@ using System.IO;
 
 namespace BoilerEventAppl
 {
-   // boiler class
+   // boiler 类
    class Boiler
    {
       private int temp;
@@ -115,12 +115,12 @@ namespace BoilerEventAppl
       }
    }
    
-   // event publisher
+   // 事件发布器
    class DelegateBoilerEvent
    {
       public delegate void BoilerLogHandler(string status);
       
-      //Defining event based on the above delegate
+      // 基于上述委托定义事件
       public event BoilerLogHandler BoilerEventLog;
       
       public void LogProcess()
@@ -147,7 +147,7 @@ namespace BoilerEventAppl
       }
    }
    
-   // this class keeps a provision for writing into the log file
+   // 该类保留写入日志文件的条款
    class BoilerInfoLogger
    {
       FileStream fs;
@@ -170,7 +170,7 @@ namespace BoilerEventAppl
       }
    }
    
-   // The event subscriber
+   // 事件订阅器
    public class RecordBoilerInfo
    {
       static void Logger(string info)
