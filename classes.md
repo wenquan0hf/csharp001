@@ -7,24 +7,24 @@
 一个类定义以关键字 class 开始，其后跟的是类的名称；类的主体部分体由一对花括号括起来。以下是一个类定义的一般形式：
 <pre><code><access specifier> class  class_name
 {
-   // member variables
+   // 成员变量
    <access specifier> <data type> variable1;
    <access specifier> <data type> variable2;
    ...
    <access specifier> <data type> variableN;
-   // member methods
+   // 成员变量
    <access specifier> <return type> method1(parameter_list)
    {
-      // method body
+      // 方法主体
    }
    <access specifier> <return type> method2(parameter_list)
    {
-      // method body
+      // 方法主体
    }
    ...
    <access specifier> <return type> methodN(parameter_list)
    {
-      // method body
+      // 方法主体
    }
 }</code></pre>
   
@@ -44,33 +44,33 @@ namespace BoxApplication
 {
     class Box
     {
-       public double length;   // Length of a box
-       public double breadth;  // Breadth of a box
-       public double height;   // Height of a box
+       public double length;  // box 的长度
+       public double breadth; // box 的宽度
+       public double height;  // box 的高度
     }
     class Boxtester
     {
         static void Main(string[] args)
         {
-            Box Box1 = new Box();   // Declare Box1 of type Box
-            Box Box2 = new Box();   // Declare Box2 of type Box
-            double volume = 0.0;    // Store the volume of a box here
+            Box Box1 = new Box();   // 声明 box1 为 box 类型
+            Box Box2 = new Box();   // 声明 box2 为 box 类型
+            double volume = 0.0;    // 在这里存放 box 的体积
 
-            // box 1 specification
+            // box 1 详细数据
             Box1.height = 5.0;
             Box1.length = 6.0;
             Box1.breadth = 7.0;
 
-            // box 2 specification
+            // box 2 详细数据
             Box2.height = 10.0;
             Box2.length = 12.0;
             Box2.breadth = 13.0;
            
-            // volume of box 1
+            // box 1 的体积
             volume = Box1.height * Box1.length * Box1.breadth;
             Console.WriteLine("Volume of Box1 : {0}",  volume);
 
-            // volume of box 2
+            // box 2 的体积
             volume = Box2.height * Box2.length * Box2.breadth;
             Console.WriteLine("Volume of Box2 : {0}", volume);
             Console.ReadKey();
@@ -94,9 +94,9 @@ namespace BoxApplication
 {
    class Box
    {
-      private double length;   // Length of a box
-      private double breadth;  // Breadth of a box
-      private double height;   // Height of a box
+      private double length;   // box 的长度
+      private double breadth;  // box 的宽度
+      private double height;   // box 的高度
       public void setLength( double len )
       {
          length = len;
@@ -120,26 +120,26 @@ namespace BoxApplication
    {
       static void Main(string[] args)
       {
-         Box Box1 = new Box();   // Declare Box1 of type Box
+         Box Box1 = new Box();   // 将 Box1 声明为 Box 类型
          Box Box2 = new Box();
          double volume;
          
-         // Declare Box2 of type Box
-         // box 1 specification
+         // 将 Box2 声明为 Box 类型
+         // box 1 详细数据
          Box1.setLength(6.0);
          Box1.setBreadth(7.0);
          Box1.setHeight(5.0);
          
-         // box 2 specification
+         // box 2 详细数据
          Box2.setLength(12.0);
          Box2.setBreadth(13.0);
          Box2.setHeight(10.0);
          
-         // volume of box 1
+         // box 1 的体积
          volume = Box1.getVolume();
          Console.WriteLine("Volume of Box1 : {0}" ,volume);
          
-         // volume of box 2
+         // box 2 的体积
          volume = Box2.getVolume();
          Console.WriteLine("Volume of Box2 : {0}", volume);
          
@@ -162,7 +162,7 @@ namespace LineApplication
 {
    class Line
    {
-      private double length;   // Length of a line
+      private double length;   // 线段长度
       public Line()
       {
          Console.WriteLine("Object is being created");
@@ -182,7 +182,7 @@ namespace LineApplication
       {
          Line line = new Line();    
          
-         // set line length
+         // 设置线段长度
          line.setLength(6.0);
          Console.WriteLine("Length of line : {0}", line.getLength());
          Console.ReadKey();
@@ -200,8 +200,8 @@ namespace LineApplication
 {
    class Line
    {
-      private double length;   // Length of a line
-      public Line(double len)  //Parameterized constructor
+      private double length;   // 线段长度
+      public Line(double len)  //参数化构造函数
       {
          Console.WriteLine("Object is being created, length = {0}", len);
          length = len;
@@ -221,7 +221,7 @@ namespace LineApplication
          Line line = new Line(10.0);
          Console.WriteLine("Length of line : {0}", line.getLength()); 
          
-         // set line length
+         // 设置线段长度
          line.setLength(6.0);
          Console.WriteLine("Length of line : {0}", line.getLength()); 
          Console.ReadKey();
@@ -247,12 +247,12 @@ namespace LineApplication
 {
    class Line
    {
-      private double length;   // Length of a line
-      public Line()  // constructor
+      private double length;   // 线段长度
+      public Line()  // 构造函数
       {
          Console.WriteLine("Object is being created");
       }
-      ~Line() //destructor
+      ~Line() //析构函数
       {
          Console.WriteLine("Object is being deleted");
       }
@@ -271,7 +271,7 @@ namespace LineApplication
       {
          Line line = new Line();
          
-         // set line length
+         // 设置线段长度
          line.setLength(6.0);
          Console.WriteLine("Length of line : {0}", line.getLength());           
       }
