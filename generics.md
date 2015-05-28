@@ -33,16 +33,16 @@ namespace GenericApplication
       static void Main(string[] args)
       {
          
-         //declaring an int array
+         // 声明一个整型数组
          MyGenericArray<int> intArray = new MyGenericArray<int>(5);
          
-         //setting values
+         // 设置值
          for (int c = 0; c < 5; c++)
          {
             intArray.setItem(c, c*5);
          }
          
-         //retrieving the values
+         // 获取值
          for (int c = 0; c < 5; c++)
          {
             Console.Write(intArray.getItem(c) + " ");
@@ -50,16 +50,16 @@ namespace GenericApplication
          
          Console.WriteLine();
          
-         //declaring a character array
+         // 声明一个字符数组
          MyGenericArray<char> charArray = new MyGenericArray<char>(5);
          
-         //setting values
+         // 设置值
          for (int c = 0; c < 5; c++)
          {
             charArray.setItem(c, (char)(c+97));
          }
          
-         //retrieving the values
+         // 获取值
          for (int c = 0; c< 5; c++)
          {
             Console.Write(charArray.getItem(c) + " ");
@@ -116,17 +116,17 @@ namespace GenericMethodAppl
          c = 'I';
          d = 'V';
          
-         //display values before swap:
+         // 显示交换之前的值
          Console.WriteLine("Int values before calling swap:");
          Console.WriteLine("a = {0}, b = {1}", a, b);
          Console.WriteLine("Char values before calling swap:");
          Console.WriteLine("c = {0}, d = {1}", c, d);
          
-         //call swap
+         // 调用 swap 进行交换
          Swap<int>(ref a, ref b);
          Swap<char>(ref c, ref d);
          
-         //display values after swap:
+         // 显示交换之后的值
          Console.WriteLine("Int values after calling swap:");
          Console.WriteLine("a = {0}, b = {1}", a, b);
          Console.WriteLine("Char values after calling swap:");
@@ -187,11 +187,11 @@ namespace GenericDelegateAppl
       
       static void Main(string[] args)
       {
-         //create delegate instances
+         // 创建委托实例
          NumberChanger<int> nc1 = new NumberChanger<int>(AddNum);
          NumberChanger<int> nc2 = new NumberChanger<int>(MultNum);
          
-         //calling the methods using the delegate objects
+         // 使用委托对象调用方法
          nc1(25);
          Console.WriteLine("Value of Num: {0}", getNum());
          nc2(5);
