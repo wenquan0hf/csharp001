@@ -7,16 +7,16 @@
 ```
 element-type this[int index]
 {
-   // The get accessor.
+   // get 访问器
    get
    {
-      // return the value specified by index
+      // 返回 index 指定的值
    }
    
-   // The set accessor.
+   // set 访问器
    set
    {
-      // set the value specified by index
+      // 设置 index 指定的值
    }
 }
 ```
@@ -177,13 +177,13 @@ namespace IndexerApplication
          names[5] = "Sunil";
          names[6] = "Rubic";
          
-         //using the first indexer with int parameter
+         // 使用带有 int 参数的第一个索引器
          for (int i = 0; i < IndexedNames.size; i++)
          {
             Console.WriteLine(names[i]);
          }
          
-         //using the second indexer with the string parameter
+         // 使用带有 string 参数的第二个索引器
          Console.WriteLine(names["Nuha"]);
          Console.ReadKey();
       }
