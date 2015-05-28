@@ -38,7 +38,7 @@ namespace InheritanceApplication
       protected int height;
    }
 
-   // Derived class
+   // 派生类
    class Rectangle: Shape
    {
       public int getArea()
@@ -56,7 +56,7 @@ namespace InheritanceApplication
          Rect.setWidth(5);
          Rect.setHeight(7);
 
-         // Print the area of the object.
+         // 打印对象的面积
          Console.WriteLine("Total area: {0}",  Rect.getArea());
          Console.ReadKey();
       }
@@ -77,7 +77,7 @@ namespace RectangleApplication
 {
    class Rectangle
    {
-      //member variables
+      //成员变量
       protected double length;
       protected double width;
       public Rectangle(double l, double w)
@@ -97,7 +97,7 @@ namespace RectangleApplication
          Console.WriteLine("Width: {0}", width);
          Console.WriteLine("Area: {0}", GetArea());
       }
-   }//end class Rectangle  
+   }// Rectangle 类结束  
    
    class Tabletop : Rectangle
    {
@@ -153,14 +153,14 @@ namespace InheritanceApplication
       protected int height;
    }
 
-   // Base class PaintCost
+   // 基类 PaintCost
    public interface PaintCost 
    {
       int getCost(int area);
 
    }
    
-   // Derived class
+   // 派生类
    class Rectangle : Shape, PaintCost
    {
       public int getArea()
@@ -182,7 +182,7 @@ namespace InheritanceApplication
          Rect.setHeight(7);
          area = Rect.getArea();
          
-         // Print the area of the object.
+         //打印对象面积
          Console.WriteLine("Total area: {0}",  Rect.getArea());
          Console.WriteLine("Total paint cost: ${0}" , Rect.getCost(area));
          Console.ReadKey();
