@@ -81,7 +81,7 @@ String 类有许多方法，以帮助使用 String 对象。下表提供了一�
 | 16 | **public int IndexOf(string value,int startIndex)**<br> 返回在这种情况下指定字符串中第一次出现的从零开始的索引，搜索开始在指定的字符位置 |
 | 17 |**public int IndexOfAny(char[] anyOf)**<br> 返回Unicode字符指定数组中第一次出现的任何字符的这个实例从零开始的索引 |
 | 18 | **public int IndexOfAny(char[] anyOf,int startIndex)**<br> 返回Unicode字符指定数组，开始搜索从指定字符位置中第一次出现的任何字符的这个实例从零开始的索引 |
-| 19 | **public string Insert(int startIndex,string value) **<br> 返回在指定的字符串被插入在当前字符串对象指定索引位置一个新的字符串 |
+| 19 | **public string Insert(int startIndex,string value)**<br> 返回在指定的字符串被插入在当前字符串对象指定索引位置一个新的字符串 |
 | 20 | **public static bool IsNullOrEmpty(string value)**<br> 指示指定的字符串是否为空或空字符串
 | 21 | **public static string Join(string separator,params string[] value)**<br> 连接字符串数组中的所有元素，使用每个元件之间指定的分隔 |
 | 22 | **public static string Join(string separator,string[] value,int startIndex,int count)**<br> 连接字符串数组的指定元素，利用每一个元素之间指定分隔符 |
