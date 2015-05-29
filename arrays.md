@@ -152,5 +152,5 @@ Element[9] = 109
 |**[锯齿状数组](http://www.tutorialspoint.com/csharp/csharp_jagged_arrays.htm)** | C# 支持多维数组，这是数组的数组 |
 |**[通过数组到函数](http://www.tutorialspoint.com/csharp/csharp_passing_arrays_to_functions.htm)** |可以通过指定数组的名称没有索引传递给函数的指针数组 |
 |**[参数数组](http://www.tutorialspoint.com/csharp/csharp_param_arrays.htm)** |这是用于使未知数量的参数传到函数 |
-|**[Array类](http://www.tutorialspoint.com/csharp/csharp_array_class.htm )** |定义在系统命名空间中，它是基类所有的数组，并使用数组提供了各种属性和方法 |
+|**[Array 类](http://www.tutorialspoint.com/csharp/csharp_array_class.htm )** |定义在系统命名空间中，它是基类所有的数组，并使用数组提供了各种属性和方法 |
 
