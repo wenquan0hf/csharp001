@@ -63,7 +63,7 @@ Inside second_space</code></pre>
 <pre><code>System.Console.WriteLine("Hello there");
 </code></pre>
 
-你也可以使用**using** 指令避免还要在前面加上 namespace 。这个指令会告诉编译器后面的代码使用的是在指定的命名空间中的名字。命名空间是因此包含下面的代码：
+你也可以使用 **using** 指令避免还要在前面加上 namespace 。这个指令会告诉编译器后面的代码使用的是在指定的命名空间中的名字。命名空间是因此包含下面的代码：
   
 让我们重写前面的示例，使用 using 指令：
 <pre><code>using System;
