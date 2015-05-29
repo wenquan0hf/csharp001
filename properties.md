@@ -1,4 +1,4 @@
-# C# - 属性
+# C# 属性
 
 属性是类、结构和接口的命名成员。类或结构中的成员变量或方法称为域。属性是域的扩展，且可使用相同的语法来访问。它们使用访问器让私有域的值可被读写或操作。
 
@@ -11,7 +11,7 @@
 
 ```
 
-    // 为字符类型声明一个叫Code的属性：
+    // 为字符类型声明一个叫 Code 的属性：
 	public string Code
 	{
    		get
@@ -24,7 +24,7 @@
    		}
 	}
 
-	// 为字符类型声明一个叫Name的属性：
+	// 为字符类型声明一个叫 Name 的属性：
 	public string Name
 	{
    		get
@@ -37,7 +37,7 @@
    		}
 	}
 
-	// 为整形类型声明一个叫Age的属性：
+	// 为整形类型声明一个叫 Age 的属性：
 	public int Age
 	{ 
    		get
@@ -67,7 +67,7 @@
       private string name = "not known";
       private int age = 0;
       
-      // 为字符类型声明一个叫Code的属性：
+      // 为字符类型声明一个叫 Code 的属性：
       public string Code
       {
          get
@@ -80,7 +80,7 @@
          }
       }
       
-      // 为字符类型声明一个叫Name的属性：
+      // 为字符类型声明一个叫 Name 的属性：
       public string Name
       {
          get
@@ -93,7 +93,7 @@
          }
       }
       
-      // 为整形类型声明一个叫Age的属性：
+      // 为整形类型声明一个叫 Age 的属性：
       public int Age
       {
          get
@@ -116,16 +116,16 @@
       public static void Main()
       {
       
-         // 创建一个Student类的对象
+         // 创建一个 Student 类的对象
          Student s = new Student();
          
-         // 为student对象设置code，name和age
+         // 为 student 对象设置 code，name 和 age
          s.Code = "001";
          s.Name = "Zara";
          s.Age = 9;
          Console.WriteLine("Student Info: {0}", s);
          
-         //为age加1
+         //为 age 加 1
          s.Age += 1;
          Console.WriteLine("Student Info: {0}", s);
          Console.ReadKey();
@@ -171,7 +171,7 @@
       private string name = "N.A";
       private int age = 0;
       
-      // 为字符类型声明一个叫Code的属性：
+      // 为字符类型声明一个叫 Code 的属性：
       public string Code
       {
          get
@@ -184,7 +184,7 @@
          }
       }
       
-      // 为字符类型声明一个叫Name的属性：
+      // 为字符类型声明一个叫 Name 的属性：
       public override string Name
       {
          get
@@ -197,7 +197,7 @@
          }
       }
       
-      // 为整形类型声明一个叫Age的属性：
+      // 为整形类型声明一个叫 Age 的属性：
       public override int Age
       {
          get
@@ -219,10 +219,10 @@
    	{
       public static void Main()
       {
-         // 创建一个Student类的对象
+         // 创建一个 Student 类的对象
          Student s = new Student();
          
-         // 为student对象设置code，name和age
+         // 为 student 对象设置 code，name 和 age
          s.Code = "001";
          s.Name = "Zara";
          s.Age = 9;
