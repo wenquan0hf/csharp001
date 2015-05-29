@@ -1,36 +1,36 @@
 # C\# 循环
 
-可能在有的情况下，需要多次执行代码块。一般是语句顺序执行：在一个函数的第一条语句，首先执行，然后是第二个等等。
+有的情况下，可能需要多次执行同一块代码。一般情况下，语句是顺序执行的：函数中的第一个语句先执行，然后是第二个语句，以此类推。
 
-编程语言提供了各种控制结构，允许更多复杂的执行路径。
+编程语言提供了允许更为复杂的执行路径的多种控制结构。
 
-循环语句可以让我们多次执行一个语句或一组语句，下面是在大多数编程语言循环的一般语句：
+循环语句允许我们多次执行一个语句或语句组，下面是大多数编程语言中循环语句的一般形式：
 
 ![image](images/loop_architecture.jpg)
 
-C# 提供了以下类型的循环来处理循环需求。点击以下链接查看其详细信息。
+C# 提供了以下几种类型的循环类型。点击链接查看每个类型的详细信息。
 
 |循环类型 | 描述 |
 | ----- | ----- |
-| **[while 循环](http://www.tutorialspoint.com/csharp/csharp_while_loop.htm)**|重复声明语句或一组，而给定的条件为真，它测试条件为执行循环体前|
-| **[for 循环](http://www.tutorialspoint.com/csharp/csharp_for_loop.htm)**|多次执行一个语句序列，简化代码，管理循环变量|
-| **[do...while 循环](http://www.tutorialspoint.com/csharp/csharp_do_while_loop.htm)**|像一个 while 语句，不同之处在于它测试条件在循环体的结尾|
-|**[嵌套循环](http://www.tutorialspoint.com/csharp/csharp_nested_loops.htm)**|可以使用一个或多个循环的同时支持 do..while 循环|
+| **[while 循环](http://www.tutorialspoint.com/csharp/csharp_while_loop.htm)**|当给定条件为真时，重复语句或语句组。它会在执行循环主体之前测试条件。|
+| **[for 循环](http://www.tutorialspoint.com/csharp/csharp_for_loop.htm)**|多次执行一个语句序列，简化管理循环变量的代码。|
+| **[do...while 循环](http://www.tutorialspoint.com/csharp/csharp_do_while_loop.htm)**|除了它是在循环主体结尾测试条件外，其他与 while 语句类似。|
+|**[嵌套循环](http://www.tutorialspoint.com/csharp/csharp_nested_loops.htm)**|您可以在 do...while 循环内使用一个或多个循环。|
 
 ## 循环控制语句
 
-循环控制语句改变其正常的顺序执行。当执行离开一个范围，在该范围内创建的所有对象自动被销毁。
+循环控制语句更改执行的正常序列。当执行离开一个范围时，所有在该范围内创建的自动对象都会被销毁。
 
-C# 提供了以下控制语句。点击以下链接查看他们的详细资料。
+C# 提供了以下控制语句。点击链接查看每个语句的详细信息。
 
 | 控制语句 | 描述 |
 | ----- | ----- |
-| **[break 语句](http://www.tutorialspoint.com/csharp/csharp_break_statement.htm)**|终止循环或 switch 语句并将执行立即循环或 switch 下面的语句|
-| **[continue 语句](http://www.tutorialspoint.com/csharp/csharp_continue_statement.htm)**|导致循环跳过它主体的其余部分，并在其条件重申之前立即重新测试|
+| **[break 语句](http://www.tutorialspoint.com/csharp/csharp_break_statement.htm)**|终止 loop 或 switch 语句，程序流将继续执行紧接着 loop 或 switch 的下一条语句。|
+| **[continue 语句](http://www.tutorialspoint.com/csharp/csharp_continue_statement.htm)**|引起循环跳过主体的剩余部分，立即重新开始测试条件。|
 
 ## 无限循环
 
-如果条件永远不会为假，一个循环则变为无限循环。 for 循环传统上用于此目的。由于形成 for 循环都需要三个表达式，则可以将条件表达式空，则做成一个死循环。
+如果条件永远不为假，则循环将变为无限循环。**for** 循环在传统意义上可用于实现无限循环。由于构成循环的三个表达式中任何一个都不是必需的，您可以将某些条件表达式留空来构成一个无限循环。
 
 **举例**
 ```
@@ -50,4 +50,4 @@ namespace Loops
 } 
 ```
 
-当条件表达式不存在时，它被假定为真 (true)。可能有一个初始化和增量的表达，但程序员更普遍使用 for(;;) 结构来表示一个无限循环。
+当条件表达式不存在时，它被假定为真。您也可以设置一个初始值和增量表达式，但一般情况下，程序员偏向于使用 for(;;) 结构来表示一个无限循环。
