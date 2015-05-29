@@ -1,4 +1,4 @@
-# C#-决策
+# C\# 决策
 
 决策结构需要程序员指定一个或多个条件进行评估，或由程序进行测试，如果条件被确定为真，那么一条或多条语句被执行，如果条件被执行被确定为假，那么任选的其它语句执行。
 
@@ -10,11 +10,11 @@ C# 提供了以下几种类型的决策语句。点击以下链接查看其详�
 
 | 语句 | 描述 |
 | ------ | ------ |
-|[if 语句](http://www.tutorialspoint.com/csharp/if_statement_in_csharp.htm)|if 语句包含一个布尔表达式后跟一个或多个语句|
-|[if...else 语句](http://www.tutorialspoint.com/csharp/if_else_statement_in_csharp.htm)|if 语句可以跟着一个可选的 else 语句，布尔表达式是假时，else 语句执行|
-|[嵌套 if 语句](http://www.tutorialspoint.com/csharp/nested_if_statements_in_csharp.htm)|可以使用一个 if 或 else if 在另一个 if 或 else if 语句中|
-|[switch 语句](http://www.tutorialspoint.com/csharp/switch_statement_in_csharp.htm)| switch 语句可以让一个变量对立值的列表平等进行测试|
-|[嵌套 switch 语句](http://www.tutorialspoint.com/csharp/nested_switch_statements_in_csharp.htm)|可以使用一个 switch 语句中的另一个 switch |
+|**[if 语句](http://www.tutorialspoint.com/csharp/if_statement_in_csharp.htm)**|**if 语句**包含一个布尔表达式后跟一个或多个语句|
+|**[if...else 语句](http://www.tutorialspoint.com/csharp/if_else_statement_in_csharp.htm)**|**if 语句**可以跟着一个可选的 **else 语句**，布尔表达式是假时，else 语句执行|
+|**[嵌套 if 语句](http://www.tutorialspoint.com/csharp/nested_if_statements_in_csharp.htm)**|可以使用一个 **if** 或 **else if** 在另一个 **if** 或 **else if** 语句中|
+|**[switch 语句](http://www.tutorialspoint.com/csharp/switch_statement_in_csharp.htm)**| **switch** 语句可以让一个变量对立值的列表平等进行测试|
+|**[嵌套 switch 语句](http://www.tutorialspoint.com/csharp/nested_switch_statements_in_csharp.htm)**|可以使用一个 **switch** 语句中的另一个 **switch** |
 
 ## ? : 运算符：
 
