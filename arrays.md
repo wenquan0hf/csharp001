@@ -148,7 +148,7 @@ Element[9] = 109
 
 |概念 | 	描述  |
 | ------ | ------ |
-|[多维数组](http://www.tutorialspoint.com/csharp/csharp_multi_dimensional_arrays.htm) | C# 支持多维数组。多维数组的最简单的形式是二维数组|
+|**[多维数组](http://www.tutorialspoint.com/csharp/csharp_multi_dimensional_arrays.htm)** | C# 支持多维数组。多维数组的最简单的形式是二维数组|
 |[锯齿状数组](http://www.tutorialspoint.com/csharp/csharp_jagged_arrays.htm) | C# 支持多维数组，这是数组的数组 |
 |[通过数组到函数](http://www.tutorialspoint.com/csharp/csharp_passing_arrays_to_functions.htm) |可以通过指定数组的名称没有索引传递给函数的指针数组 |
 |[参数数组](http://www.tutorialspoint.com/csharp/csharp_param_arrays.htm) |这是用于使未知数量的参数传到函数 |
