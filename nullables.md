@@ -1,7 +1,7 @@
 # C\# 可空类型
 C＃提供了一个特殊的数据类型，**可空类型**，可以在其中指定正常范围值，以及空 (null) 值。  
 例如，在一个可空 <Int32> 变量中，你可以从 -2,147,483,648 到 2,147,483,647 或空值中存储任意值。  
-同样，你可以指定 true，false 或 null 的 Nullable <bool> 变量。声明一个可空 (Nullable) 类型的语法如下：
+同样，你可以指定 true，false 或 null 的 Nullable <bool> 变量。声明一个**可空类型** (Nullable) 的语法如下：
 ```
 < data_type> ? <variable_name> = null;
 ```
