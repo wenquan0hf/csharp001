@@ -1,4 +1,4 @@
-# C# - 文件I/O
+# C# 文件I/O
 
 文件是存储在磁盘具有特定名称和目录路径的数据的集合。当一个文件被打开阅读或书写时，就变成了流。
 
@@ -30,7 +30,7 @@ System.IO 的命名空间有多种类，这些类被用于执行大量和文件�
 
 ## FileStream 类
 
-System.IO 命名空间中的FileStream类有助于读取，写入和关闭文件。这个类派生自抽象类流。
+System.IO 命名空间中的 FileStream 类有助于读取，写入和关闭文件。这个类派生自抽象类流。
 
 你需要创建一个 FileStream 对象用于创建一个新的文件或打开一个已存在的文件。创建 FileStream 对象的语法如下：
 
@@ -50,11 +50,11 @@ System.IO 命名空间中的FileStream类有助于读取，写入和关闭文件
 
 | 参数        | 描述           |
 | ------------- |:-------------|
-| FileMode      | fileMode枚举定义了各种方法来打开文件。fileMode枚举的成员是：<br>   * **Append**: 打开一个已有的文件，并将光标放置在文件的末尾。如果文件不存在，则创建文件。<br>   * **Create**: 它创建一个新的文件<br>   * **CreateNew**: 指定操作系统应创建一个新的文件。如果文件已存在，则抛出异常。<br>   * **Open**: 它会打开一个现有的文件<br>   * **OpenOrCreate**: 指定操作系统应打开一个已有的文件。如果文件不存在，则用指定的名称创建一个新的文件打开。<br>   * **Truncate**: 打开一个已有的文件，文件一旦打开，就将被截断为零字节大小。 |
-| FileAccess      | FileAccess 枚举成员有：Read, ReadWrite 和 Write.     |
-| FileShare | FileShare枚举有以下成员：<br>   * **Inheritable**: 允许文件句柄可由子进程继承。<br>   * **None**: 它拒绝共享当前文件<br>   * **Read**: 它允许打开文件进行读取<br>   * **ReadWrite**: 它允许打开文件进行读取和写入<br>   * **Write**: 它允许打开文件写入      |
+| FileMode      | fileMode 枚举定义了各种方法来打开文件。fileMode 枚举的成员是：<br>   * **Append**: 打开一个已有的文件，并将光标放置在文件的末尾。如果文件不存在，则创建文件。<br>   * **Create**: 它创建一个新的文件<br>   * **CreateNew**: 指定操作系统应创建一个新的文件。如果文件已存在，则抛出异常。<br>   * **Open**: 它会打开一个现有的文件<br>   * **OpenOrCreate**: 指定操作系统应打开一个已有的文件。如果文件不存在，则用指定的名称创建一个新的文件打开。<br>   * **Truncate**: 打开一个已有的文件，文件一旦打开，就将被截断为零字节大小。 |
+| FileAccess      | FileAccess 枚举成员有：Read，ReadWrite 和 Write。    |
+| FileShare | FileShare 枚举有以下成员：<br>   * **Inheritable**: 允许文件句柄可由子进程继承。<br>   * **None**: 它拒绝共享当前文件<br>   * **Read**: 它允许打开文件进行读取<br>   * **ReadWrite**: 它允许打开文件进行读取和写入<br>   * **Write**: 它允许打开文件写入      |
 
-##　示例
+## 示例
 
 下面的程序示范了 FileStream 类：
 
