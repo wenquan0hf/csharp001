@@ -1,10 +1,10 @@
 # C\# 封装
 
-**封装**的定为义“作为在一个物理或逻辑封装包封一个或多个项目的过程”。封装，面向对象的编程方法，阻止访问的实现细节。
+**封装**被定为义为“把一个或多个项目封闭在一个物理的或者逻辑的包中”。在面向对象程序设计方法论中，封装是为了防止对实现细节的访问。
 
-抽象和封装是面向对象编程相关的特性。抽象允许制作相关的信息可见和封装使程序员来实现抽象所需的水平。
+抽象和封装是面向对象程序设计的相关特性。抽象允许相关信息可视化，封装使程序员*实现所需级别的抽象*。
 
-封装是通过使用**访问修辞符**来实现。**访问修辞符**定义一个类成员的范围和可视度。C# 支持以下访问修辞符：
+封装使用**访问修饰符**来实现。一个**访问修饰符**定义了一个类成员的范围和可见性。C# 支持的访问修饰符如下所示：
 
 - Public
 
@@ -16,18 +16,18 @@
 
 - Protected internal
 
-## Public 访问修辞符
+## Public 访问修饰符
 
-公共访问说明允许一个类的成员变量和成员函数暴露在其他功能和对象。任何公共成员可以从类的外部访问。
+Public 访问修饰符允许一个类将其成员变和成员函数暴露给其他的函数和对象。任何公有成员可以被外部的类访问。
 
-下面的例子说明了这一点：
+下面的例子说明了这点：
 ```
 using System;
 namespace RectangleApplication
 {
    class Rectangle
    {
-      //member variables
+      //成员变量
       public double length;
       public double width;
       
@@ -37,9 +37,9 @@ namespace RectangleApplication
       }
       public void Display()
       {
-         Console.WriteLine("Length: {0}", length);
-         Console.WriteLine("Width: {0}", width);
-         Console.WriteLine("Area: {0}", GetArea());
+         Console.WriteLine("长度: {0}", length);
+         Console.WriteLine("宽度: {0}", width);
+         Console.WriteLine("面积: {0}", GetArea());
       }
    }//end class Rectangle
    
@@ -59,37 +59,37 @@ namespace RectangleApplication
 
 编译执行上述代码，得到如下结果：
 ```
-Length: 4.5
-Width: 3.5
-Area: 15.75
+长度: 4.5
+宽度: 3.5
+面积: 15.75
 ```
 
-在上面的例子中，成员变量的 length 和 width 都声明为 public，这样它们就可以使用 Rectangle 类，命名实例 r 通过函数 main() 进行访问。
+在上面的例子中，成员变量 length 和 width 被声明为 **public**，所以它们可以被函数 Main() 使用 Rectangle 类的实例 **r** 访问。
 
-成员函数 Display() 和 getArea() 也可以直接访问这些变量不使用类的任何实例。
+成员函数 *Display()* 和 *GetArea()* 也可以不通过类的实例直接直接访问这些变量。
 
-成员函数 Display() 也被声明为 public，所以从 Main() 使用 Rectangle 类，命名为 r 的一个实例也可以被访问。
+成员函数 *Display()* 也被声明为 **public**，所以从它也能被 *Main()* 使用 Rectangle 类的实例 **r** 访问。
 
-## Private 访问修辞符
+## Private 访问修饰符
 
-私有访问符允许类从其他职能和对象隐藏其成员变量和成员函数。只有同一个类的函数可以访问它的私有成员。即使是一个类的实例也不能访问它的私有成员。
+Private 访问修饰符允许一个类将其成员变量和成员函数对其他的函数和对象进行隐藏。只有同一个类中的函数可以访问它的私有成员。即使是类的实例也不能访问它的私有成员。
 
-下面的例子说明了这一点：
+下面的例子说明了这点：
 ```
 using System;
 namespace RectangleApplication 
 {
    class Rectangle
    {
-      //member variables
+      //成员变量
       private double length;
       private double width;
       
       public void Acceptdetails()
       {
-         Console.WriteLine("Enter Length: ");
+         Console.WriteLine("请输入长度: ");
          length = Convert.ToDouble(Console.ReadLine());
-         Console.WriteLine("Enter Width: ");
+         Console.WriteLine("请输入宽度: ");
          width = Convert.ToDouble(Console.ReadLine());
       }
       public double GetArea()
@@ -98,9 +98,9 @@ namespace RectangleApplication
       }
       public void Display()
       {
-         Console.WriteLine("Length: {0}", length);
-         Console.WriteLine("Width: {0}", width);
-         Console.WriteLine("Area: {0}", GetArea());
+         Console.WriteLine("长度: {0}", length);
+         Console.WriteLine("宽度: {0}", width);
+         Console.WriteLine("面积: {0}", GetArea());
       }
    }//end class Rectangle
    
@@ -119,34 +119,34 @@ namespace RectangleApplication
 
 编译执行上述代码，得到如下结果：
 ```
-Enter Length:
+请输入长度:
 4.4
-Enter Width:
+请输入宽度:
 3.3
-Length: 4.4
-Width: 3.3
-Area: 14.52
+长度: 4.4
+宽度: 3.3
+面积: 14.52
 ```
 
-在上面的例子中，成员变量的 length 和 width 都声明为 private，所以它们不能从 main() 函数访问。成员函数 AcceptDetails() 和 Display() 可以访问这些变量。由于成员函数 AcceptDetails() 和 Display() 被声明为 public，它们可以从 Main() 函数中使用 Rectangle 类，命名为 r 的一个实例访问。
+在上面的例子中，成员变量 length 和 width 被声明为 **private**，所以它们不能被函数 Main() 访问。成员函数 *AcceptDetails()* 和 *Display()* 可以访问这些变量。由于成员函数 *AcceptDetails()* 和 *Display()* 被声明为 **public**，所以它们可以被 *Main()* 函数使用 Rectangle 类的实例 **r** 访问。
 
 
-## Protected 访问修辞符
+## Protected 访问修饰符
 
-Protected 访问修辞符允许子类来访问其基类的成员变量和成员函数。这种方式有助于实现继承。我们将在继承这一章节详细讨论这个问题。
+Protected 访问修饰符允许子类访问它的基类的成员变量和成员函数。这种方式有助于实现继承。我们将在继承的章节详细讨论这个问题。
 
-## Internal 访问修辞符
+## Internal 访问修饰符
 
-内部访问符允许类的成员变量和成员函数暴露在其他功能和对象在当前汇编。换句话说，使用内部访问说明任何成员都可以从在其中构件被定义在应用程序中定义的任何类或方法来访问。
+Internal 访问修饰符允许一个类将其成员变量和成员函数暴露给当前程序中的其他函数和对象。换句话说，带有 Internal 访问修饰符的任何成员可以被定义在该成员所定义的应用程序内的任何类或方法访问。
 
-下面的程序说明了这一点：
+下面的例子说明了这点：
 ```
 using System;
 namespace RectangleApplication
 {
    class Rectangle
    {
-      //member variables
+      //成员变量
       internal double length;
       internal double width;
       
@@ -156,9 +156,9 @@ namespace RectangleApplication
       }
       public void Display()
       {
-         Console.WriteLine("Length: {0}", length);
-         Console.WriteLine("Width: {0}", width);
-         Console.WriteLine("Area: {0}", GetArea());
+         Console.WriteLine("长度: {0}", length);
+         Console.WriteLine("宽度: {0}", width);
+         Console.WriteLine("面积: {0}", GetArea());
       }
    }//end class Rectangle
    
@@ -178,13 +178,13 @@ namespace RectangleApplication
 
 编译执行上述代码，得到如下结果：
 ```
-Length: 4.5
-Width: 3.5
-Area: 15.75
+长度: 4.5
+宽度: 3.5
+面积: 15.75
 ```
 
-在上面的例子中，注意到成员函数 *getArea()* 无任何访问说明符声明。如果没有指定访问修饰符，则使用类成员的默认访问修饰符，即为 private。
+在上面的例子中，请注意成员函数 *GetArea()* 声明的时候不带有任何访问修饰符。如果没有指定访问修饰符，则使用类成员的默认访问修饰符，即为 **private**。
 
-## Protected internal 访问修辞符
+## Protected internal 访问修饰符
 
-受保护的内部访问符允许一个类从其他类对象和函数隐藏其成员变量和成员函数，除了相同的应用程序中的子类。这在实现继承中也有使用。
+Protected internal 访问修饰符允许一个类将其成员变量和成员函数对同一应用程内的子类以外的其他的类对象和函数进行隐藏。这也被用于实现继承。
