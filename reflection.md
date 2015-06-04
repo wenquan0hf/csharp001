@@ -35,7 +35,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
 	{
    		public readonly string Url;
    
-   		public string Topic   // Topic is a named parameter
+   		public string Topic   // Topic 是一个表示名字的参数
    		{
       		get
       		{
@@ -47,7 +47,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
       		}
   		}
    
-   		public HelpAttribute(string url)   // url is a positional parameter
+   		public HelpAttribute(string url)   // url 是一个表示位置的参数
    		{
       		this.Url = url;
    		}
@@ -95,8 +95,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
 
 	namespace BugFixApplication
 	{
-   		//a custom attribute BugFix to be
-   		//assigned to a class and its members
+   		//自定义特性BugFix分配给一个类和他的成员
    		[AttributeUsage(AttributeTargets.Class |
    		AttributeTargets.Constructor |
    		AttributeTargets.Field |
@@ -159,7 +158,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
    
    	class Rectangle
    	{
-      //member variables
+      //成员变量
       protected double length;
       protected double width;
       public Rectangle(double l, double w)
@@ -179,7 +178,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
          Console.WriteLine("Width: {0}", width);
          Console.WriteLine("Area: {0}", GetArea());
       }
-   	}//end class Rectangle
+   	}//Rectangle 类的结束
    
    	class ExecuteRectangle
    	{
@@ -189,7 +188,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
          r.Display();
          Type type = typeof(Rectangle);
          
-         //iterating through the attribtues of the Rectangle class
+         //遍历 Rectangle 类的属性
          foreach (Object attributes in type.GetCustomAttributes(false))
          {
             DeBugInfo dbi = (DeBugInfo)attributes;
@@ -202,7 +201,7 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
             }
          }
          
-         //iterating through the method attribtues
+         //遍历方法属性
          foreach (MethodInfo m in type.GetMethods())
          {
             foreach (Attribute a in m.GetCustomAttributes(true))
