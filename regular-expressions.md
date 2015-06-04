@@ -1,23 +1,22 @@
-# C# 正则表达式
+# 正则表达式
 
 正则表达式是一种可以和输入文本相匹配的表达式。.Net framework 提供了一个正则表达式引擎让这种匹配成为可能。一个表达式可以由一个或多个字符，运算符，或结构体组成。
 
-
 ## 构建正则表达式的定义
 
-有很多种类的字符，运算符，结构体可以定义正则表达式。点击下面的连接查找这些结构：
+有很多种类的字符，运算符，结构体可以定义正则表达式。
 
-* **[转义字符](http://www.tutorialspoint.com/csharp/csharp_character_escapes.htm)**
-* **[字符类](http://www.tutorialspoint.com/csharp/csharp_character_classes.htm)**
-* **[集合](http://www.tutorialspoint.com/csharp/csharp_anchors.htm)**
-* **[分组构造](http://www.tutorialspoint.com/csharp/csharp_grouping_constructs.htm)**
-* **[限定符](http://www.tutorialspoint.com/csharp/csharp_quantifiers.htm)**
-* **[回溯引用构造](http://www.tutorialspoint.com/csharp/csharp_backreference_constructs.htm)**
-* **[可替换结构](http://www.tutorialspoint.com/csharp/csharp_alternation_constructs.htm)**
-* **[替换](http://www.tutorialspoint.com/csharp/csharp_substitutions.htm)**
-* **[混合结构](http://www.tutorialspoint.com/csharp/csharp_miscellaneous_constructs.htm)**
+- **转义字符**
+- **字符类**
+- **集合**
+- **分组构造**
+- **限定符**
+- **回溯引用构造**
+- **可替换结构**
+- **替换**
+- **混合结构**
 
-##　**Regex** 正则表达式类
+## Regex 正则表达式类
 
 Regex 类用于表示一个正则表达式。它有下列常用的方法：
 
@@ -29,8 +28,6 @@ Regex 类用于表示一个正则表达式。它有下列常用的方法：
 | 4      | **public MatchCollection Matches(string input)**<br>在所有出现的正则表达式中搜索特定的输入字符 |
 | 5      | **public string Replace(string input, string replacement)**<br>在一个特定的输入字符中，用特定的字符串替换所有满足某个表达式的字符串。      |
 | 6 | **public string[] Split(string input)**<br>将一个输入字符拆分成一组子字符串，从一个由正则表达式指出的位置上开始。     |
-
-
 
 有关属性和方法的完成列表，请参见微软的 C# 文档。
 
@@ -159,8 +156,6 @@ Regex 类用于表示一个正则表达式。它有下列常用的方法：
 编译执行上述代码，得到如下结果：
 
 ```
-
 	Original String: Hello World   
 	Replacement String: Hello World
-
 ```

@@ -1,8 +1,9 @@
-# C\# 运算符重载
+# 运算符重载
   
 你可以重新定义或重载大部分 C# 可用的内置操作符。因此，程序员也可以使用用户定义类型的操作符。重载操作符是特殊关键字 **operator** 其后跟被定义的名字的符号。像其他函数一样，重载操作符也有返回类型和参数列表。
   
 例如，浏览如下函数：
+
 <pre><code>
 public static Box operator+ (Box b, Box c)
 {
@@ -18,6 +19,7 @@ public static Box operator+ (Box b, Box c)
 ## 实现运算符重载
   
 下列程序显示了完整地实现：
+
 <pre><code>using System;
 namespace OperatorOvlApplication
 {
@@ -96,7 +98,9 @@ namespace OperatorOvlApplication
       }
    }
 }</code></pre>
+
 编译执行上述代码，得到如下结果：
+
 <pre><code>Volume of Box1 : 210
 Volume of Box2 : 1560
 Volume of Box3 : 5400</code></pre>
@@ -105,19 +109,20 @@ Volume of Box3 : 5400</code></pre>
 ## 可重载与不可重载的运算符
   
 下表列出了 C# 中运算符的可重载能力：
-  
 
 | 操作符        | 描述          | 
 |:------------- |:-------------|
-| +, -, !, ~, ++, --      | 这些一元运算符使用一个操作数，可以被重载。 |
+| +, -, !, ~, ++, --      | 这些一元运算符使用一个操作数，可以被重载 |
 | +, -, *, /, %     | 这些二元运算符使用一个操作数，可以被重载      |
 | ==, !=, <, >, <=, >= | 这些比较运算符，可以被重载   |
 | &&, \| \|  | 这些条件逻辑运算符不可被直接重载     |
-| +=, -=, *=, /=, %= | 赋值运算符不能重载。      |
-| =, ., ?:, ->, new, is, sizeof, typeof | 这些运算符不能被重载      |
+| +=, -=, *=, /=, %= | 赋值运算符不能重载|
+| =, ., ?:, ->, new, is, sizeof, typeof | 这些运算符不能被重载 |
   
 ## 示例
+
 针对上述讨论，让我们扩展上面的例子，重载更多的操作符：
+
 <pre><code>using System;
 namespace OperatorOvlApplication
 {
@@ -299,7 +304,9 @@ namespace OperatorOvlApplication
       }
    }
 }</code></pre>
+
 编译执行上述代码，得到如下结果：
+
 <pre><code>Box 1: (6, 7, 5)
 Box 2: (12, 13, 10)
 Volume of Box1 : 210

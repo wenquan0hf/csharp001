@@ -1,4 +1,4 @@
-# C# 特性
+# 特性
 
 特性（Attribute）是用于在运行时传递程序中各种元素（比如类、方法、结构、枚举、组件等）的行为信息的声明性标签。您可以通过使用特性向程序添加声明性信息。一个声明性标签是通过放置在它所应用的元素前面的方括号（[ ]）来描述的。
 
@@ -9,7 +9,6 @@
 列举特性的语法如下：
 
 ```
-
     [attribute(positional_parameters, name_parameter = value, ...)]
 	element
 ```
@@ -19,33 +18,34 @@
 ## 预定义特性
 
 .Net Framework 提供了三种预定义的特性：
-* **AttributeUsage**
-* **Conditional**
-* **Obsolete**
+
+- **AttributeUsage**
+- **Conditional**
+- **Obsolete**
 
 ## AttributeUsage
 
 该特性描述了用户定义的特性类是如何使用的。它规定了某个特性应用的项目类型。
 
 规定这种特性的语法如下：
-```
 
+```
     [AttributeUsage(
    		validon,
    		AllowMultiple=allowmultiple,
    		Inherited=inherited
 	)]
 ```
+
 其中，
 
-* 参数 validon 规定特性了能承载特性的语言元素。它是枚举器 AttributeTargets 的值的组合。默认值是 AttributeTargets.All。
-* 参数 allowmultiple（可选的）为该特性的 AllowMultiple 属性提供了一个布尔值。如果为 true，则该特性是多用的。默认值是 false（单用的）。
-* 参数 inherited（可选的）为该特性的 Inherited 属性提供一个布尔值。如果为 true，则该特性可被派生类继承。默认值是 false（不可继承）。
+- 参数 validon 规定特性了能承载特性的语言元素。它是枚举器 AttributeTargets 的值的组合。默认值是 AttributeTargets.All。
+- 参数 allowmultiple（可选的）为该特性的 AllowMultiple 属性提供了一个布尔值。如果为 true，则该特性是多用的。默认值是 false（单用的）。
+- 参数 inherited（可选的）为该特性的 Inherited 属性提供一个布尔值。如果为 true，则该特性可被派生类继承。默认值是 false（不可继承）。
 
 例如：
 
 ```
-
     [AttributeUsage(AttributeTargets.Class |
 	AttributeTargets.Constructor |
 	AttributeTargets.Field |
@@ -63,22 +63,20 @@
 规定该特性的语法如下：
 
 ```
-
 	[Conditional(
    		conditionalSymbol
 	)]
 ```
 
 例如：
-```
 
+```
 	[Conditional("DEBUG")]
 ```
 
 下面的实例演示了该特性：
 
 ```
-
 	#define DEBUG
 	using System;
 	using System.Diagnostics;
@@ -116,7 +114,6 @@
 编译执行上述代码，得到如下结果：
 
 ```
-
 	In Main function
 	In Function 1	
 	In Function 2
@@ -129,7 +126,6 @@
 规定该特性的语法如下：
 
 ```
-
 	[Obsolete(
    		message
 	)]
@@ -140,13 +136,13 @@
 ```
 
 其中，
-* 参数 message，是一个字符串，描述项目为什么过时的原因以及该替代使用什么。
-* 参数 iserror，是一个布尔值。如果该值为 true，编译器应把该项目的使用当作一个错误。默认值是 false（编译器生成一个警告）。
+
+- 参数 message，是一个字符串，描述项目为什么过时的原因以及该替代使用什么。
+- 参数 iserror，是一个布尔值。如果该值为 true，编译器应把该项目的使用当作一个错误。默认值是 false（编译器生成一个警告）。
 
 下面的实例演示了该特性：
 
 ```
-
 	using System;
 
 	public class MyClass
@@ -170,7 +166,6 @@
 当你执行这个程序时，编译器会提示如下的错误：
 
 ```
-
 	Don't use OldMethod, use NewMethod instead
 ```
 
@@ -180,10 +175,10 @@
 
 创建并使用自定义特性包含四个步骤：
 
-* 声明自定义特性
-* 构建自定义特性
-* 在目标程序元素上应用自定义特性
-* 通过反射访问特性
+- 声明自定义特性
+- 构建自定义特性
+- 在目标程序元素上应用自定义特性
+- 通过反射访问特性
 
 最后一个步骤包含编写一个简单的程序来读取元数据以便查找各种符号。元数据是用于描述其他数据的数据和信息。该程序应使用反射来在运行时访问特性。我们将在下一章详细讨论这点。
 
@@ -192,7 +187,6 @@
 一个新的自定义特性应派生自 System.Attribute 类。例如：
 
 ```
-
 	//一个自定义的特性BugFix被分配给类和类的成员
 	[AttributeUsage(AttributeTargets.Class |
 	AttributeTargets.Constructor |
@@ -203,22 +197,23 @@
 
 	public class DeBugInfo : System.Attribute
 ```
+
 在上面的代码中，我们已经声明了一个名为 DeBugInfo 的自定义特性。
 
 ## 构建自定义特性
 
 让我们构建一个名为 DeBugInfo 的自定义特性，该特性将存储调试程序获得的信息。它存储下面的信息：
 
-* bug 的代码编号
-* 辨认该 bug 的开发人员名字
-* 最后一次审查该代码的日期
-* 一个存储了开发人员标记的字符串消息
+- bug 的代码编号
+- 辨认该 bug 的开发人员名字
+- 最后一次审查该代码的日期
+- 一个存储了开发人员标记的字符串消息
+
 我们的 DeBugInfo 类将带有三个用于存储前三个信息的私有属性（property）和一个用于存储消息的公有属性（property）。所以 bug 编号、开发人员名字和审查日期将是 DeBugInfo 类的必需的定位（ positional）参数，消息将是一个可选的命名（named）参数。
 
 每个特性必须至少有一个构造函数。必需的定位（ positional）参数应通过构造函数传递。下面的代码演示了 DeBugInfo 类：
 
 ```
-
 	//一个自定义的特性BugFix被分配给类和类的成员
 	[AttributeUsage(AttributeTargets.Class |
 	AttributeTargets.Constructor |
@@ -284,7 +279,6 @@
 通过将特性放置在目标之前来使用它：
 
 ```
-
 	[DeBugInfo(45, "Zara Ali", "12/8/2012", Message = "Return type mismatch")]
 	[DeBugInfo(49, "Nuha Ali", "10/10/2012", Message = "Unused variable")]
 	class Rectangle

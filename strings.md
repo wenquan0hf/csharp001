@@ -1,7 +1,11 @@
-# # C\# 字符串
+# 字符串
+
 在 C# 中，可以使用字符串作为字符数组，但更常见的做法是使用 string 关键字来声明一个字符串变量。该 string 关键字是 System.String 类的别名。
+
 ## 创建一个 String 对象
+
 可以使用下列方法之一字符串对象：
+
 - 通过指定一个字符串给一个字符串变量
 - 通过使用 String 类的构造函数
 - 通过使用字符串连接运算符(+)
@@ -9,6 +13,7 @@
 - 通过调用格式化方法的值或对象转换成它的字符串表示
   
 下面的例子说明了这一点：
+
 ```
 using System;
 namespace StringApplication
@@ -43,14 +48,18 @@ namespace StringApplication
    }
 }
 ```
+
 编译执行上述代码，得到如下结果：
+
 ```
 Full Name: Rowan Atkinson
 Greetings: Hello
 Message: Hello From Tutorials Point
 Message: Message sent at 5:58 PM on Wednesday, October 10, 2012
 ```
+
 ## String 类的属性
+
 String 类有以下两个属性：
 
 | 序号 |	属性名称和描述 |
@@ -59,6 +68,7 @@ String 类有以下两个属性：
 | 2 |	Length  获取字符在当前字符串对象的数目 |
 
 ## String 类的方法
+
 String 类有许多方法，以帮助使用 String 对象。下表提供了一些最常用的方法：
 
 | 序号 |	属性名称和描述 |
@@ -107,6 +117,7 @@ String 类有许多方法，以帮助使用 String 对象。下表提供了一�
 下面的例子说明了一些上面提到的方法： 
 
 **比较字符串：**
+
 ```
 using System;
 namespace StringApplication
@@ -131,11 +142,15 @@ namespace StringApplication
    }
 }
 ```
+
 编译执行上述代码，得到如下结果：
+
 ```
 This is test and This is text are not equal.
 ```
+
 **String包含字符串：**
+
 ```
 using System;
 namespace StringApplication
@@ -154,11 +169,15 @@ namespace StringApplication
    }
 }
 ```
+
 编译执行上述代码，得到如下结果：
+
 ```
 The sequence 'test' was found.
 ```
+
 **获取一个子字符串：**
+
 ```
 using System;
 namespace StringApplication
@@ -175,11 +194,15 @@ namespace StringApplication
    }
 }
 ```
+
 编译执行上述代码，得到如下结果：
+
 ```
 San Pedro
 ```
+
 **连接字符串：**
+
 ```
 using System;
 namespace StringApplication
@@ -200,7 +223,9 @@ namespace StringApplication
    }
 }
 ```
+
 编译执行上述代码，得到如下结果：
+
 ```
 Down the way nights are dark
 And the sun shines daily on the mountain top

@@ -1,4 +1,4 @@
-# C# 反射
+# 反射
 
 反射（Reflection） 对象用于在运行时获取类型信息。该类位于 System.Reflection 命名空间中，可访问一个正在运行的程序的元数据。
 
@@ -8,10 +8,10 @@ System.Reflection 命名空间包含了允许您获取有关应用程序信息�
 
 反射（Reflection）有下列用途：
 
-* 它允许在运行时查看属性（attribute）信息。
-* 它允许审查集合中的各种类型，以及实例化这些类型。
-* 它允许延迟绑定的方法和属性（property）。
-* 它允许在运行时创建新类型，然后使用这些类型执行一些任务。
+- 它允许在运行时查看属性（attribute）信息。
+- 它允许审查集合中的各种类型，以及实例化这些类型。
+- 它允许延迟绑定的方法和属性（property）。
+- 它允许在运行时创建新类型，然后使用这些类型执行一些任务。
 
 ## 查看元数据
 
@@ -20,14 +20,12 @@ System.Reflection 命名空间包含了允许您获取有关应用程序信息�
 System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与类相关的属性（attribute）。为了做到这点，您可以定义目标类的一个对象，如下：
 
 ```
-
     System.Reflection.MemberInfo info = typeof(MyClass);
 ```
 
 下面的程序示范了这点：
 
 ```
-
     using System;
 
 	[AttributeUsage(AttributeTargets.All)]
@@ -80,7 +78,6 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
 当上面的代码被编译和执行时，它会显示附加到类 MyClass 上的自定义属性：
 
 ```
-
     HelpAttribute
 ```
 
@@ -89,7 +86,6 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
 在本实例中，我们将使用在上一章中创建的 DeBugInfo 属性，并使用反射（Reflection）来读取 Rectangle 类中的元数据。
 
 ```
-
     using System;
 	using System.Reflection;
 
@@ -226,7 +222,6 @@ System.Reflection 类的 MemberInfo 对象需要被初始化，用于发现与�
 编译执行上述代码，得到如下结果：
 
 ```
-
     Length: 4.5
 	Width: 7.5
 	Area: 33.75

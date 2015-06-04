@@ -1,13 +1,13 @@
-# C# 异常处理
+# 异常处理
 
 异常是程序执行过程中产生的问题。C# 异常是对程序运行过程中出现的额外情况的一种反馈，例如除数为零时。
 
 异常提供了一种将控制权从程序的一个部分转移到另一个部分的方式。C# 异常处理有四个关键词：**try**，**catch**，**finally**，**throw**。
 
-* **try**：try 块标识代码块的哪些特定的异常将被激活。它的后面是一个或多个 catch 块。
-* **catch**：一个用于捕获异常的程序段，将 catch 放在你希望能处理这个异常的地方。“catch”这个关键字标志着异常的捕获。
-* **finally**：finally 保证了无论是否有异常抛出，此代码段中的程序都会被执行。例如，如果你打开了一个文件，那么不管是否发生了异常，文件都需要关闭。
-* **throw**：当出现问题时，程序会抛出异常。这项工作是通过使用 throw 来实现的。
+- **try**：try 块标识代码块的哪些特定的异常将被激活。它的后面是一个或多个 catch 块。
+- **catch**：一个用于捕获异常的程序段，将 catch 放在你希望能处理这个异常的地方。“catch”这个关键字标志着异常的捕获。
+- **finally**：finally 保证了无论是否有异常抛出，此代码段中的程序都会被执行。例如，如果你打开了一个文件，那么不管是否发生了异常，文件都需要关闭。
+- **throw**：当出现问题时，程序会抛出异常。这项工作是通过使用 throw 来实现的。
 
 ## 语法
 
@@ -60,7 +60,6 @@ System.SystemException 类是所有预定义的系统异常的基类。
 | System.OutOfMemoryException     | 处理来自可用内存不足产生的错误|
 | System.StackOverflowException      | 处理从堆栈溢出产生的错误     |
 
-
 ## 处理异常
 
 C# 为在 try catch 语句块中处理异常提供了一种结构化的解决方案。这种方法可以使核心代码段和异常处理部分分离开。
@@ -107,7 +106,6 @@ C# 为在 try catch 语句块中处理异常提供了一种结构化的解决方
 编译执行上述代码，得到如下结果：
 
 ```
-
 	Exception caught: System.DivideByZeroException: Attempted to divide by zero. 
 	at ...
 	Result: 0
@@ -118,7 +116,6 @@ C# 为在 try catch 语句块中处理异常提供了一种结构化的解决方
 你也可以定义你自己的异常。自定义异常类继承自 ApplicationException 类。示范如下：
 
 ```
-
 	using System;
 	namespace UserDefinedException
 	{
@@ -167,9 +164,7 @@ C# 为在 try catch 语句块中处理异常提供了一种结构化的解决方
 编译执行上述代码，得到如下结果：
 
 ```
-
 	TempIsZeroException: Zero Temperature found
-
 ```
 
 ## 抛出对象
@@ -177,11 +172,9 @@ C# 为在 try catch 语句块中处理异常提供了一种结构化的解决方
 如果某个对象是直接或间接地继承自 System.Exception 类，你可以抛出这个对象。你可以在 catch 语句块中用 throw 语句抛出这个对象：
 
 ```
-
 	Catch(Exception e)
 	{
    		...
    		Throw e
 	}
-
 ```

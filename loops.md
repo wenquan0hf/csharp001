@@ -1,4 +1,4 @@
-# C\# 循环
+# 循环
 
 有的情况下，可能需要多次执行同一块代码。一般情况下，语句是顺序执行的：函数中的第一个语句先执行，然后是第二个语句，以此类推。
 
@@ -12,10 +12,10 @@ C# 提供了以下几种类型的循环类型。点击链接查看每个类型�
 
 |循环类型 | 描述 |
 | ----- | ----- |
-| **[while 循环](http://www.tutorialspoint.com/csharp/csharp_while_loop.htm)**|当给定条件为真时，重复语句或语句组。它会在执行循环主体之前测试条件。|
-| **[for 循环](http://www.tutorialspoint.com/csharp/csharp_for_loop.htm)**|多次执行一个语句序列，简化管理循环变量的代码。|
-| **[do...while 循环](http://www.tutorialspoint.com/csharp/csharp_do_while_loop.htm)**|除了它是在循环主体结尾测试条件外，其他与 while 语句类似。|
-|**[嵌套循环](http://www.tutorialspoint.com/csharp/csharp_nested_loops.htm)**|您可以在 do...while 循环内使用一个或多个循环。|
+| **while 循环**|当给定条件为真时，重复语句或语句组。它会在执行循环主体之前测试条件。|
+| **for 循环**|多次执行一个语句序列，简化管理循环变量的代码。|
+| **do...while 循环**|除了它是在循环主体结尾测试条件外，其他与 while 语句类似。|
+|**嵌套循环**|您可以在 do...while 循环内使用一个或多个循环。|
 
 ## 循环控制语句
 
@@ -25,14 +25,15 @@ C# 提供了以下控制语句。点击链接查看每个语句的详细信息�
 
 | 控制语句 | 描述 |
 | ----- | ----- |
-| **[break 语句](http://www.tutorialspoint.com/csharp/csharp_break_statement.htm)**|终止 loop 或 switch 语句，程序流将继续执行紧接着 loop 或 switch 的下一条语句。|
-| **[continue 语句](http://www.tutorialspoint.com/csharp/csharp_continue_statement.htm)**|引起循环跳过主体的剩余部分，立即重新开始测试条件。|
+| **break 语句**|终止 loop 或 switch 语句，程序流将继续执行紧接着 loop 或 switch 的下一条语句。|
+| **continue 语句**|引起循环跳过主体的剩余部分，立即重新开始测试条件。|
 
 ## 无限循环
 
 如果条件永远不为假，则循环将变为无限循环。**for** 循环在传统意义上可用于实现无限循环。由于构成循环的三个表达式中任何一个都不是必需的，您可以将某些条件表达式留空来构成一个无限循环。
 
 **举例**
+
 ```
 using System;
 namespace Loops

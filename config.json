@@ -1,7 +1,7 @@
 {
-    "name": "C# 编程指南",
-    "introduction": "",
-    "title": "C# 编程指南 - 极客学院 Wiki",
-    "keywords": "",
-    "description": ""
+    "name": "C# 中文指南",
+    "introduction": "C# 是微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言。",
+    "title": "C# 中文指南 - 极客学院 Wiki",
+    "keywords": "C#,C,C++",
+    "description": "C# 是微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言。本指南由浅入深的讲解了 C# 语言的基础及高级应用。"
 }

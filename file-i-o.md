@@ -1,10 +1,10 @@
-# C# 文件I/O
+# 文件 I/O
 
 文件是存储在磁盘具有特定名称和目录路径的数据的集合。当一个文件被打开阅读或书写时，就变成了流。
 
 流基本上是通过通信路径中的字节顺序。主要有两个流：输入流和输出流。输入流用于从文件系统中读取数据，输出流用于向文件中写数据。
 
-## I/O类
+## I/O 类
 
 System.IO 的命名空间有多种类，这些类被用于执行大量和文件有关的操作，例如创建和删除文件，读写文件，关闭文件等等。
 
@@ -35,17 +35,13 @@ System.IO 命名空间中的 FileStream 类有助于读取，写入和关闭文�
 你需要创建一个 FileStream 对象用于创建一个新的文件或打开一个已存在的文件。创建 FileStream 对象的语法如下：
 
 ```
-
     FileStream <object_name> = new FileStream( <file_name>, <FileMode Enumerator>, <FileAccess Enumerator>, <FileShare Enumerator>);
-
 ```
 
 例如，创建一个 FileStream 对象F，读取一个名为 sample.txt 的文件的方法如下：
 
 ```
-
     FileStream F = new FileStream("sample.txt", FileMode.Open, FileAccess.Read, FileShare.Read);
-
 ```
 
 | 参数        | 描述           |
@@ -59,7 +55,6 @@ System.IO 命名空间中的 FileStream 类有助于读取，写入和关闭文�
 下面的程序示范了 FileStream 类：
 
 ```
-
     using System;
 	using System.IO;
 
@@ -85,15 +80,12 @@ System.IO 命名空间中的 FileStream 类有助于读取，写入和关闭文�
       		}
    		}
 	}
-
 ```
 
 编译执行上述代码，得到如下结果：
 
 ```
-
 	1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 -1
-
 ```
 
 ## C# 中的高级文件操作

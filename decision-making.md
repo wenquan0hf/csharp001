@@ -1,6 +1,6 @@
-# C\# 判断
+# 判断
 
-判断结构需要程序员指定一个或多个要评估或测试的条件，以及条件为真时要执行的语句（必需的）和条件为假时要执行 的语句（可选的）。
+判断结构需要程序员指定一个或多个要评估或测试的条件，以及条件为真时要执行的语句（必需的）和条件为假时要执行的语句（可选的）。
 
 下面是大多数编程语言中典型判断结构的一般形式：
 
@@ -9,12 +9,12 @@
 C# 提供了以下类型的判断语句。点击链接查看每个语句的详细信息。
 
 | 语句 | 描述 |
-| ------ | ------ |
-|**[if 语句](http://www.tutorialspoint.com/csharp/if_statement_in_csharp.htm)**|一个**if 语句**由一个布尔表达式后跟一个或多个语句组成。|
-|**[if...else 语句](http://www.tutorialspoint.com/csharp/if_else_statement_in_csharp.htm)**|一个**if 语句**后跟一个可选的 **else 语句**，else 语句在布尔表达式为假时执行。|
-|**[嵌套 if 语句](http://www.tutorialspoint.com/csharp/nested_if_statements_in_csharp.htm)**|您可以在一个 **if** 或 **else if** 语句内使用另一个 **if** 或 **else if** 语句。|
-|**[switch 语句](http://www.tutorialspoint.com/csharp/switch_statement_in_csharp.htm)**|一个 **switch** 语句允许测试一个变量等于多个值时的情况。|
-|**[嵌套 switch 语句](http://www.tutorialspoint.com/csharp/nested_switch_statements_in_csharp.htm)**|您可以在一个 **switch** 语句内使用另一个 **switch** 语句。 |
+|------ |------ |
+|**if 语句**|一个**if 语句**由一个布尔表达式后跟一个或多个语句组成。|
+|**if...else 语句**|一个**if 语句**后跟一个可选的 **else 语句**，else 语句在布尔表达式为假时执行。|
+|**嵌套 if 语句**|您可以在一个 **if** 或 **else if** 语句内使用另一个 **if** 或 **else if** 语句。|
+|**switch 语句**|一个 **switch** 语句允许测试一个变量等于多个值时的情况。|
+|**嵌套 switch 语句**|您可以在一个 **switch** 语句内使用另一个 **switch** 语句。 |
 
 ## ? : 运算符：
 
